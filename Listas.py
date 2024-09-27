@@ -14,14 +14,14 @@ lista3 = ["c",4.65, True, "True","Vamos Aprender", ["outra","lista","interna"], 
 lista4 = ["primeiro","segundo","terceiro"]
 # print(lista4)
 
-#acessando um elemento da lista
-# print(lista3)
-# # print(lista3[4][2])
-# print(lista3[2:6:2])
-# print(lista3[:3])
-# print(lista3[-1:])
-# print("imprimindo de dois em dois", lista3[::2])
-# print(len(lista3))
+# acessando um elemento da lista
+print(lista3)
+print(lista3[4][2])
+print(lista3[2:6:2])
+print(lista3[:3])
+print(lista3[-1:])
+print("imprimindo de dois em dois", lista3[::2])
+print(len(lista3))
 
 lista1.append("python") #adicionando elemento a uma lista
 # print(lista1)
