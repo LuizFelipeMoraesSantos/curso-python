@@ -63,3 +63,5 @@ print(f"Há {contador_vogal} vogais na frase")
 print(f"Há {contador_consoante} consoantes na frase")
         
 
+
+
