@@ -37,7 +37,6 @@ print(a)
 palavra ="Python"
 
 for letra in palavra: 
-    
     print(letra) #nesse caso, a variável assume cada caractere de string palavra 
     
     
