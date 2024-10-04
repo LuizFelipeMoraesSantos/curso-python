@@ -3,33 +3,33 @@ def nome_da_funcao(parametros):
     #bloco de codigo
     return()
 #<---------------------------------------------------------->
-# def saudacao():
-#     print("Olá, bem-vindo(a) à aula de funções em python!")
+def saudacao():#criando um função
+    print("Olá, bem-vindo(a) à aula de funções em python!")#inserindo o codigo que a função utilizara
 
-# saudacao()
-#<---------------------------------------------------------->
-# def saudacao(nome= "aluno"): #'nome' é um parametro
-#     print(f"olá {nome}")
-# saudacao() #'aluno' vira um valor padrão
-# #se eu definir oque eu quero ele sobscreve o valor
-# saudacao("Marcelo") #'Marcelo' é um argumento
+saudacao()#chamando a função
+# <---------------------------------------------------------->
+def saudacao(nome= "aluno"): #'nome' é um parametro
+    print(f"olá {nome}")
+saudacao() #'aluno' vira um valor padrão
+#se eu definir oque eu quero ele sobscreve o valor
+saudacao("Marcelo") #'Marcelo' é um argumento
 
 #<---------------------------------------------------------->
-# def somar(a,b): #recebendo mais de 1 parametro
-#     return a + b
-# resultado = somar(10, 20)
-# print(resultado)
+def somar(a,b): #recebendo mais de 1 parametro
+    return a + b#retornando os parametros (a,b) para somar eles fora da função
+resultado = somar(10, 20) #definindo os numeros que (a,b) representam
+print(resultado)#output 30
 #<---------------------------------------------------------->
-# def checar_numero(n):
-#     if n > 0:
-#         return "Positivo"
-#     elif n < 0:
-#         return "Negativo"
-#     else:
-#         return "Zero"
+def checar_numero(n):#criando um função que checa se um numero é positivo ou negativo
+    if n > 0: #se o numero for maior que '0' ele é positivo
+        return "Positivo"
+    elif n < 0: # se o numero for menor que '0' ele é negativo
+        return "Negativo"
+    else:#se não for nenhuma da opções acima ele é zero
+        return "Zero"
     
-# num = int(input("insira um numero para verificar se ele epositivo ou negativo: "))
-# print(checar_numero(num))
+num = int(input("insira um numero para verificar se ele e positivo ou negativo: "))#pedindo para o usuario inserir o numero
+print(checar_numero(num))
 #<---------------------------------------------------------->
 global_var = 100
 
