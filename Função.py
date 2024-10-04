@@ -77,6 +77,7 @@ def soma_pares(numeros):
     return soma
 print(soma_pares([1,2,3,4,5,6]))
 #<----------------------------------------------------------------------------------------------------------->
+
 def obter_detalhes_pedido():
     #simula a obtenção de detalhes do pedido
     pedido = {
@@ -84,16 +85,37 @@ def obter_detalhes_pedido():
         "preco": 1200.00,
         "quantidade": 2
     }
+    pedido2 = {
+        "item": "celular",
+        "preco2": 2.3000,
+        "quantidade": 3
+    }
     print("Detalhes do pedido obtidos.")
-    return pedido
+    return pedido, pedido2
 
-def calcular_preço_total(pedido):
+def calcular_preço_total(pedido,pedido2):
     #calcular o preço total do pedido
     preco_total = pedido['preco'] *pedido['quantidade']
-    print(f"Preço total calculado: R${preco_total}")
-    return preco_total
+    preco_total2 = pedido2['preco'] *pedido2['quantidade']
+    
+    print(f"Preço total do primeiro pedido calculado é calculado: R${preco_total}")
+    print(f"Preço total do segundo pedido calculado é : R${preco_total2}")
+    return preco_total, preco_total2
 
-def enviar_confirmação(pedido, preco_total):
+def enviar_confirmação(pedido, preco_total, pedido2, preco_total2):
     #simula o envio de uma confirmação de pedido
-    print(f"Confirmação enviada para {pedido['quantidade']} {pedido['item']}(s).")
-    print(f"Valor total a ser pago: R$ ")
+    print(f"Confirmação do primeiro pedido enviada para {pedido['quantidade']} {pedido['item']}(s).")
+    print(f"Valor total a ser pago do primeiro pedido é: R$ {preco_total}")
+    print(f"confirmção enviada do segundo pedido enviada para {pedido2['quantidade']} {pedido2['item']}(s) ")
+    print(f"Valor total a ser pago do segundo pedido é: R$ {preco_total2}")
+    
+def processar_pedido():
+    pedido = obter_detalhes_pedido()
+    preco_total = calcular_preço_total(pedido)
+    enviar_confirmação(pedido,preco_total)
+    
+    pedido2 = obter_detalhes_pedido()
+    preco_total2 = calcular_preço_total(pedido2)
+    enviar_confirmação(pedido2,preco_total2)
+    
+processar_pedido()
