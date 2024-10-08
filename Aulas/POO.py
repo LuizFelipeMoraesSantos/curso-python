@@ -49,3 +49,20 @@ pessoa =  Data_Nascimento(2024- int(input("insira sua idade")))
 
 pessoa.nascimento()
         
+class Cachorro_Quente():
+    def __init__(self,ingrediente1,ingrediente2,ingrediente3):
+        self.ingrediente1 = ingrediente1
+        self.ingrediente2 = ingrediente2
+        self.ingrediente3 = ingrediente3
+        
+    def apresentar(self):
+            print(f"os ingredientes do cachorro quente são: {self.ingrediente1}, {self.ingrediente2} é {self.ingrediente3}")
+
+ingrediente = Cachorro_Quente("pão","salsicha","batata palha")
+print(ingrediente.ingrediente1)
+print(ingrediente.ingrediente2)
+print(ingrediente.ingrediente3)
+
+ingrediente.apresentar()
+
+        
