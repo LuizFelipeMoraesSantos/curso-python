@@ -45,6 +45,7 @@ class Data_Nascimento:
     def nascimento(self):
         print(f"Eu nasci no ano de {self.data}")
 
-pessoa = Data_Nascimento(input("Insira o ano que você nasceu: "))
+pessoa =  Data_Nascimento(2024- int(input("insira sua idade")))
+
 pessoa.nascimento()
         
